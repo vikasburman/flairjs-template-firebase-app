@@ -1,9 +1,9 @@
-[FlairJS App Boilerplate](https://flairjs.com/templates/#/app)
+[FlairJS FirebaseApp Boilerplate](https://flairjs.com/templates/#/firebase-app)
 ---
 
-FlairJS App Boilerplate is a development project structure to build [FlairJS](https://flairjs.com) app using true object orientated features in plain vanilla JavaScript.
+FlairJS FirebaseApp Boilerplate is a development project structure to build [FlairJS](https://flairjs.com) FirebaseApp using true object orientated features in plain vanilla JavaScript.
 
-It provides the optimized configuration settings for organizing and building FlairJS app. Find more about this [here](https://flairjs.com/templates/#/app).
+It provides the optimized configuration settings for organizing and building FlairJS FirebaseApp. Find more about this [here](https://flairjs.com/templates/#/firebase-app).
 
 
 

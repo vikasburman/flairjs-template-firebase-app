@@ -3,15 +3,19 @@
         {   "enabled": true, 
             "type": "http", 
             "name": "api",
-            "region": "us-east1"
+            "config": {
+                "region": "us-east1"
+            }
         },
         {   "enabled": false, 
             "type": "http", 
             "name": "capi",
-            "region": "us-east1",
-            "runtimeOpts": {
-                "timeoutSeconds": 300,
-                "memory": "1GB"
+            "config": {
+                "region": "us-east1",
+                "runtimeOpts": {
+                    "timeoutSeconds": 300,
+                    "memory": "1GB"
+                }
             }
         },
         {   "enabled": false, 
@@ -23,14 +27,18 @@
             "type": "cron", 
             "name": "<funcName>",
             "handler": "<qualifiedTypeName>", 
-            "when": "every 5 minutes", 
-            "timeZone": "America/New_York"
+            "config": {
+                "when": "every 5 minutes", 
+                "timeZone": "America/New_York"
+            }
         },
         {   "enabled": false, 
             "type": "trigger", 
+            "name": "<funcName>",
             "source": "<sourceType>", 
             "trigger": "<triggerType>",
-            "handler": "<qualifiedTypeName>"
+            "handler": "<qualifiedTypeName>",
+            "config": {}
         }        
     ]
 }

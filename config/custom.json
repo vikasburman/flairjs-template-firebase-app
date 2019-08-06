@@ -19,8 +19,8 @@
             "dest": "/",
             "plugins": ["copy_files"],
             "copy": [
+                "private",
                 "firebase.json",
-                "serviceAccountKey.json",
                 ".firebaserc"
             ]
         },      

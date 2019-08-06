@@ -23,7 +23,7 @@ Class('(auto)', VueView, function() {
     <div><h2>{{ i18n('strings', 'hello', 'Hello World!') }}</h2><p>Current server time is: {{ now }}</p></div>
     `;
 
-    $$('fetch', 'get', 'json', 'https://us-east1-flairjs-firebase-app.cloudfunctions.net/api/v1/now');
+    $$('fetch', 'get', 'json', '/**/api/*/now');
     this.now = async (api) => {
         let result = await api() || { now: 'Could not connect to server.' };
         return result.now;

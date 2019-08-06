@@ -1,4 +1,15 @@
 {
+    "flair": {
+        "api": {
+            "roots": {
+                "dev": "https://us-east1-flairjs-firebase-app.cloudfunctions.net/",
+                "test": "",
+                "prod": ""
+            },
+            "version": "v1"
+        }
+    },
+
     "flair.app": {
         "app": "myapp.main.App",
 

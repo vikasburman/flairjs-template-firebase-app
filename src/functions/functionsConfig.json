@@ -1,0 +1,37 @@
+{
+    "functions": [
+        {   "enabled": true, 
+            "type": "http", 
+            "name": "api",
+            "region": "us-east1"
+        },
+        {   "enabled": false, 
+            "type": "http", 
+            "name": "capi",
+            "region": "us-east1",
+            "runtimeOpts": {
+                "timeoutSeconds": 300,
+                "memory": "1GB"
+            }
+        },
+        {   "enabled": false, 
+            "type": "direct", 
+            "name": "<funcName>",
+            "handler": "<qualifiedTypeName>"
+        },
+        {   "enabled": false, 
+            "type": "cron", 
+            "name": "<funcName>",
+            "handler": "<qualifiedTypeName>", 
+            "when": "every 5 minutes", 
+            "timeZone": "America/New_York"
+        },
+        {   "enabled": false, 
+            "type": "trigger", 
+            "source": "<sourceType>", 
+            "trigger": "<triggerType>",
+            "handler": "<qualifiedTypeName>"
+        }        
+    ]
+}
+

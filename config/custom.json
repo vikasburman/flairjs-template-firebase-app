@@ -7,30 +7,67 @@
         { "name": "minify_files", "file": "minify_files.js" }
     ],    
     "build": [
-        { "profile": "server" },
-        { "profile": "client" }
+        { "profile": "firebase" },
+        { "profile": "database" },
+        { "profile": "storage" },
+        { "profile": "firestore" },
+        { "profile": "functions" },
+        { "profile": "hosting" }
     ],
     "profiles": {
-        "server": {
-            "root": "server",
+        "firebase": {
             "dest": "/",
+            "plugins": ["copy_files"],
+            "copy": [
+                "firebase.json",
+                "serviceAccountKey.json",
+                ".firebaserc"
+            ]
+        },      
+        "database": {
+            "plugins": ["copy_files"],
+            "copy": [
+                "database.rules.json"
+            ]
+        },  
+        "storage": {
+            "plugins": ["copy_files"],
+            "copy": [
+                "storage.rules"
+            ]
+        },                   
+        "firestore": {
+            "plugins": ["copy_files"],
+            "copy": [
+                "firestore.indexes.json",
+                "firestore.rules"
+            ]
+        },                   
+        "functions": {
+            "omitRoot": true,
             "skipMinify": true,
             "build": [
-                "app"
+                "app",
+                "cron",
+                "direct",
+                "http",
+                "trigger"
             ],
             "plugins": ["copy_files", "node_modules"],
             "copy": [
+                "private",
                 "appConfig.json",
-                "main.js",
-                "private"
+                "firebaseConfig.json",
+                "functionsConfig.json",
+                "main.js"
             ]
         },
-        "client": {
-            "root": "www",
-            "dest": "@server",
+        "hosting": {
+            "dest": "/public",
             "omitRoot": true,
             "build": [
-                "app"
+                "app",
+                "ui"
             ],
             "plugins": ["copy_files", "web_modules", "minify_files"],
             "copy": [

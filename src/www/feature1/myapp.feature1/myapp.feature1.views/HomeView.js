@@ -1,6 +1,6 @@
 const VueView = await include('flair.ui.vue.VueView');
 const CommonLayout = await include('myapp.shared.views.CommonLayout');
-const ServerDateTime = await include('myapp.services.ServerDateTime');
+const ServerDateTime = await include('myapp.feature1.services.ServerDateTime');
 
 /**
  * @name HomeView
@@ -21,7 +21,7 @@ Class('(auto)', VueView, function() {
     };
 
     this.html = `
-    <div><h2>{{ i18n('strings', 'hello', 'Hello World!') }}</h2><p>Current server time is: {{ now }}</p></div>
+    <div><p><img src="./assets/images/logo.png"></img><h2>{{ i18n('strings', 'hello', 'Hello World!') }}</h2><p>Current server time is: {{ now }}</p></div>
     `;
 
     this.now = async () => {

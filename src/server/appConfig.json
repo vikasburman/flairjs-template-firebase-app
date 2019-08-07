@@ -20,10 +20,7 @@
             "preambles": [
                 "flairjs-fabric",
                 "./app",
-                "./cron",
-                "./direct",
-                "./http",
-                "./trigger"
+                "./feature1"
             ],            
             "bootwares": [
                 "flair.boot.NodeEnv",
@@ -45,10 +42,7 @@
             ],
             "preambles": [
                 "./app",
-                "./cron",
-                "./direct",
-                "./http",
-                "./trigger"
+                "./feature1"
             ],            
             "bootwares": [
                 "flair.boot.DIContainer"

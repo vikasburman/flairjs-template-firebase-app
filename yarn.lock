@@ -2282,10 +2282,10 @@ flagged-respawn@^1.0.0:
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-1.0.1.tgz#e7de6f1279ddd9ca9aac8a5971d618606b3aab41"
   integrity sha512-lNaHNVymajmk0OJMBn8fVUAU1BtDeKIqKoVhk4xAALB57aALg6b4W0MfJ/cUE0g9YBXy5XhSlPIpYIJ7HaY/3Q==
 
-flairjs-fabric@^0.9.36:
-  version "0.9.36"
-  resolved "https://registry.yarnpkg.com/flairjs-fabric/-/flairjs-fabric-0.9.36.tgz#31f452eedc2aa0b67467dfb51635761cc4a20bc5"
-  integrity sha512-cMo9Bjs3AL+IRQ1nxMrt80KHYDJiFw9dNxz3JMXLV7KmDjZqgkWIQQFWImNZ+ZjoJzZGFnDjQGDaNeAYlCaIIw==
+flairjs-fabric@^0.9.37:
+  version "0.9.37"
+  resolved "https://registry.yarnpkg.com/flairjs-fabric/-/flairjs-fabric-0.9.37.tgz#eb0c8e7b011b87968f0cc6ae23218a9e86e16141"
+  integrity sha512-+PGxT9P16KCTGEpVqMGYW7TVGtOZ6CqvXGHbz8GEtnNV3b2OM8/M2GPD9E2Vze014NZpjGtJ92jJs8zNBSW5pg==
 
 flairjs@^0.9.65:
   version "0.9.65"

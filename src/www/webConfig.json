@@ -20,8 +20,7 @@
             "preambles": [
                 "flairjs-fabric",
                 "./app",
-                "./services",
-                "./views"
+                "./feature1"
             ],
             "bootwares": [
                 "flair.boot.DIContainer",
@@ -41,7 +40,7 @@
             ],
             "preambles": [
                 "./app",
-                "./services"
+                "./feature1"
             ],
             "bootwares": [
                 "flair.boot.DIContainer"
@@ -63,8 +62,8 @@
         },
 
         "routes": {
-            "home": "myapp.views.home",
-            "notfound": "myapp.views.notfound"
+            "home": "myapp.feature1.views.home",
+            "notfound": "myapp.feature1.views.notfound"
         },
 
         "i18n": {

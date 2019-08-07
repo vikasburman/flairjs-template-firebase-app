@@ -16,6 +16,7 @@
     ],
     "profiles": {
         "firebase": {
+            "root": "server/firebase",
             "dest": "/",
             "plugins": ["copy_files"],
             "copy": [
@@ -24,18 +25,24 @@
             ]
         },      
         "database": {
+            "root": "server/firebase/database",
+            "dest": "/database",
             "plugins": ["copy_files"],
             "copy": [
                 "database.rules.json"
             ]
         },  
         "storage": {
+            "root": "server/firebase/storage",
+            "dest": "/storage",            
             "plugins": ["copy_files"],
             "copy": [
                 "storage.rules"
             ]
         },                   
         "firestore": {
+            "root": "server/firebase/firestore",
+            "dest": "/firestore",             
             "plugins": ["copy_files"],
             "copy": [
                 "firestore.indexes.json",
@@ -49,17 +56,15 @@
             "skipMinify": true,
             "build": [
                 "app",
-                "cron",
-                "direct",
-                "http",
-                "trigger"
+                "feature1"
             ],
             "plugins": ["copy_files", "node_modules"],
             "copy": [
                 "private",
                 "appConfig.json",
-                "firebaseConfig.json",
-                "functionsConfig.json",
+                "firebase/firebaseConfig.json",
+                "firebase/functionsConfig.json",
+                "firebase/serviceAccountKey.json",
                 "main.js"
             ]
         },
@@ -69,8 +74,7 @@
             "omitRoot": true,
             "build": [
                 "app",
-                "services",
-                "views"
+                "feature1"
             ],
             "plugins": ["copy_files", "web_modules", "minify_files"],
             "copy": [

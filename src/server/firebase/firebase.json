@@ -13,6 +13,7 @@
     "public": "public",
     "ignore": [
       "firebase.json",
+      ".firebaserc",
       "database",
       "firestore",
       "functions",

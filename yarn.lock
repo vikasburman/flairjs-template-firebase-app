@@ -2282,15 +2282,15 @@ flagged-respawn@^1.0.0:
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-1.0.1.tgz#e7de6f1279ddd9ca9aac8a5971d618606b3aab41"
   integrity sha512-lNaHNVymajmk0OJMBn8fVUAU1BtDeKIqKoVhk4xAALB57aALg6b4W0MfJ/cUE0g9YBXy5XhSlPIpYIJ7HaY/3Q==
 
-flairjs-fabric@^0.9.28:
-  version "0.9.28"
-  resolved "https://registry.yarnpkg.com/flairjs-fabric/-/flairjs-fabric-0.9.28.tgz#8dd803c20fbdb1be2974313a708b40d0217685a8"
-  integrity sha512-b1/ThpIGupb/90zrORG64W0koL6bStuV7tG0QkNCv6Y6AE8g9dccdnJ2N/dXhoAlw5XULA4f3UKF5iKZpH0Skw==
+flairjs-fabric@^0.9.36:
+  version "0.9.36"
+  resolved "https://registry.yarnpkg.com/flairjs-fabric/-/flairjs-fabric-0.9.36.tgz#31f452eedc2aa0b67467dfb51635761cc4a20bc5"
+  integrity sha512-cMo9Bjs3AL+IRQ1nxMrt80KHYDJiFw9dNxz3JMXLV7KmDjZqgkWIQQFWImNZ+ZjoJzZGFnDjQGDaNeAYlCaIIw==
 
-flairjs@^0.9.55:
-  version "0.9.55"
-  resolved "https://registry.yarnpkg.com/flairjs/-/flairjs-0.9.55.tgz#03c7014beff30155a647cb610d70874b1ffde7c8"
-  integrity sha512-6+PGEXjAK9iydusRfYOLJ9tW6wIWQfjogUhr1x+WNNBKIGQCJjaTfizZzSdICS33ta/qMxWcQOPFPPj241MmKg==
+flairjs@^0.9.65:
+  version "0.9.65"
+  resolved "https://registry.yarnpkg.com/flairjs/-/flairjs-0.9.65.tgz#a510f18b911168fbfe3695cce18255372a20bd9f"
+  integrity sha512-+m7ejaKn3jXNzCNOfmnsi04iyqxT2jgAqoJjlrdg8hc4hVemXwE6yCE3b6yG3jCkg+pAMbUS06fnnWOcMZg7yQ==
 
 flat-cache@^2.0.1:
   version "2.0.1"

@@ -1,7 +1,8 @@
 {
-    "flair": {
+    "global": {
         "api": {
             "roots": {
+                "local": "http://localhost:5001/flairjs-firebase-app/us-east1/",
                 "dev": "https://us-east1-flairjs-firebase-app.cloudfunctions.net/",
                 "test": "",
                 "prod": ""
@@ -19,7 +20,8 @@
             "preambles": [
                 "flairjs-fabric",
                 "./app",
-                "./ui"
+                "./services",
+                "./views"
             ],
             "bootwares": [
                 "flair.boot.DIContainer",
@@ -38,7 +40,8 @@
             "files": [
             ],
             "preambles": [
-                "./app"
+                "./app",
+                "./services"
             ],
             "bootwares": [
                 "flair.boot.DIContainer"
@@ -60,8 +63,8 @@
         },
 
         "routes": {
-            "home": "myapp.main.ui.home",
-            "notfound": "myapp.main.ui.notfound"
+            "home": "myapp.views.home",
+            "notfound": "myapp.views.notfound"
         },
 
         "i18n": {

@@ -19,7 +19,6 @@
             "dest": "/",
             "plugins": ["copy_files"],
             "copy": [
-                "private",
                 "firebase.json",
                 ".firebaserc"
             ]
@@ -44,6 +43,8 @@
             ]
         },                   
         "functions": {
+            "root": "server",
+            "dest": "/functions",
             "omitRoot": true,
             "skipMinify": true,
             "build": [
@@ -63,11 +64,13 @@
             ]
         },
         "hosting": {
+            "root": "www",
             "dest": "/public",
             "omitRoot": true,
             "build": [
                 "app",
-                "ui"
+                "services",
+                "views"
             ],
             "plugins": ["copy_files", "web_modules", "minify_files"],
             "copy": [

@@ -1,4 +1,16 @@
 {
+    "global": {
+        "api": {
+            "roots": {
+                "local": "",
+                "dev": "",
+                "test": "",
+                "prod": ""
+            },
+            "version": ""
+        }        
+    },
+    
     "flair.app": {
         "app": "myapp.main.App",
 

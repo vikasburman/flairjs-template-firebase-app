@@ -8,16 +8,17 @@
             "type": "chrome",
             "request": "launch",
             "name": "Client Mode",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}/dist/www/"
+            "url": "http://localhost:5000",
+            "webRoot": "${workspaceFolder}/dist/public/"
         },        
         {
             "type": "node",
             "request": "launch",
             "name": "Server Mode",
-            "program": "${workspaceFolder}/dist/main.js",
-            "cwd": "${workspaceFolder}/dist",
-            "args": [ "${env:NODE_ENV='development'}" ]
+            "program": "${workspaceFolder}/dist/functions/main.js",
+            "env": { 
+                "FIREBASE_CONFIG": "{\"apiKey\": \"AIzaSyDjv3PArqeS9mSiJ07KRV0-c6__uF5ZRKE\", \"authDomain\": \"flairjs-firebase-app.firebaseapp.com\", \"databaseURL\": \"https://flairjs-firebase-app.firebaseio.com\", \"projectId\": \"flairjs-firebase-app\", \"storageBucket\": \"flairjs-firebase-app.appspot.com\", \"messagingSenderId\": \"784875702853\", \"appId\": \"1:784875702853:web:7cf36ff2b033bc2c\"}"
+            }
         }
     ]
 }

@@ -59,8 +59,8 @@
 
         "routing": {
             "mounts": {
-                "main": "/api/",
-                "api_v1": "/v1/"
+                "main": "/",
+                "api": "/api/"
             },
             "main-settings": [
                 { "name": "case sensitive routing", "value": false },

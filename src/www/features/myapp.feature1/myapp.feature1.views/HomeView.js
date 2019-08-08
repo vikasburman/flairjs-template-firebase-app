@@ -1,6 +1,6 @@
 const VueView = await include('flair.ui.vue.VueView');
 const CommonLayout = await include('myapp.shared.views.CommonLayout');
-const ServerDateTime = await include('myapp.feature1.services.ServerDateTime');
+const { ServerDateTime } = ns('myapp.feature1.services');
 
 /**
  * @name HomeView
@@ -17,16 +17,18 @@ Class('(auto)', VueView, function() {
         strings: "./strings.json"
     };
     this.data = {
-        now: ''
-    };
-
-    this.getServerTime = async () => {
-        return await ServerDateTime.now();
+        now: '** loading **';
     };
 
     $$('override');
     this.beforeLoad = async (base, ctx, el) => { // eslint-disable-line no-unused-vars
         this.title = this.i18n.titles.home || 'Home';
-        this.data.now = await this.getServerTime();
+    };
+
+    $$('override');
+    this.loadData = async (base, ctx, el) => { // eslint-disable-line no-unused-vars
+        this.data.now = await ServerDateTime.now(this.abortHandle());
+        // note: save result of abortHandle (which is an instance of AbortController) to cancel
+        // on choice here, otherwise cancelLoadData call will do it automatically
     };
 });

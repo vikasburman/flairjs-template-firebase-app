@@ -6,15 +6,15 @@ const VueView = await include('flair.ui.vue.VueView');
  */
 $$('ns', '(auto)');
 Class('(auto)', VueView, function() {
+    this.title = "Not Found";
+    this.html = `
+        <div><h2>{{ i18n('strings', 'notfound', 'Not Found') )}}</h2></div>
+    `;
     this.i18n = {
         titles: "./titles.json",
         strings: "./strings.json"
     };
 
-    this.title = "Not Found";
-    this.html = `
-        <div><h2>{{ i18n('strings', 'notfound', 'Not Found') )}}</h2></div>
-    `;
 
     $$('override');
     this.beforeLoad = async (base, ctx, el) => { // eslint-disable-line no-unused-vars

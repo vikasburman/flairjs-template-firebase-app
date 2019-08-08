@@ -7,11 +7,14 @@ const { VueComponent } = ns('flair.ui.vue');
 $$('ns', '(auto)');
 Class('(auto)', VueComponent, function() {
     this.data = {
-        title: flair.info.title,
-        version: flair.info.version
+        title: flair.info.title
     };
 
     this.html = `
-        <div>{{title}} - v{{version}}</div>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <span class="navbar-brand">{{title}} Firebase App</span>
+        </nav>
+    </header>
     `;
 });

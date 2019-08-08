@@ -20,7 +20,7 @@
             "preambles": [
                 "flairjs-fabric",
                 "./app",
-                "./feature1"
+                "./features"
             ],            
             "bootwares": [
                 "flair.boot.NodeEnv",
@@ -42,7 +42,7 @@
             ],
             "preambles": [
                 "./app",
-                "./feature1"
+                "./features"
             ],            
             "bootwares": [
                 "flair.boot.DIContainer"

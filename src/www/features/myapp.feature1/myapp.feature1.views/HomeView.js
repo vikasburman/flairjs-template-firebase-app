@@ -8,30 +8,25 @@ const ServerDateTime = await include('myapp.feature1.services.ServerDateTime');
  */
 $$('ns', '(auto)');
 Class('(auto)', VueView, function() {
+    this.title = "Home";
     this.layout = new CommonLayout();
-
+    this.html = './HomeView/index.html';
+    this.style = './HomeView/styles.css';
     this.i18n = {
         titles: "./titles.json",
         strings: "./strings.json"
     };
-
-    this.title = "Home";
     this.data = {
         now: ''
     };
 
-    this.html = `
-    <div><p><img src="./assets/images/logo.png"></img><h2>{{ i18n('strings', 'hello', 'Hello World!') }}</h2><p>Current server time is: {{ now }}</p></div>
-    `;
-
-    this.now = async () => {
+    this.getServerTime = async () => {
         return await ServerDateTime.now();
     };
 
     $$('override');
     this.beforeLoad = async (base, ctx, el) => { // eslint-disable-line no-unused-vars
         this.title = this.i18n.titles.home || 'Home';
-
-        this.data.now = await this.now();
+        this.data.now = await this.getServerTime();
     };
 });

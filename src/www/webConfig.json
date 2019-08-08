@@ -15,12 +15,16 @@
         "app": "myapp.main.App",
 
         "boot": {
+            "links": [
+                { "rel": "stylesheet", "href": "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" },
+                { "rel": "stylesheet", "href": "./assets/css/styles.css" }
+            ],
             "files": [
             ],
             "preambles": [
                 "flairjs-fabric",
                 "./app",
-                "./feature1"
+                "./features"
             ],
             "bootwares": [
                 "flair.boot.DIContainer",
@@ -40,7 +44,7 @@
             ],
             "preambles": [
                 "./app",
-                "./feature1"
+                "./features"
             ],
             "bootwares": [
                 "flair.boot.DIContainer"

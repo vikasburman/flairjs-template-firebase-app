@@ -13,10 +13,10 @@ Class('(auto)', VueLayout, function() {
     ];
 
     this.html = `
-        <div>
-            <div>[[header]]</div>
-            <div>[[view]]</div>
-            <div>[[footer]]</div>
-        </div>
+    [[header]]
+    <div class="container">
+        [[view]]
+    </div>
+    [[footer]]
     `;
 });

@@ -1,6 +1,5 @@
 {
     "plugins": [
-        { "name": "docker_image", "file": "docker_image.js", "settings": { "cmd": "" } },
         { "name": "node_modules", "file": "node_modules.js", "settings": { "cmd": "yarn install --prod" } },
         { "name": "web_modules", "file": "web_modules.js" },
         { "name": "copy_files", "file": "copy_files.js" },
@@ -56,16 +55,16 @@
             "skipMinify": true,
             "build": [
                 "app",
-                "feature1"
+                "features"
             ],
             "plugins": ["copy_files", "node_modules"],
             "copy": [
                 "private",
                 "appConfig.json",
+                "main.js",
                 "firebase/firebaseConfig.json",
                 "firebase/functionsConfig.json",
-                "firebase/serviceAccountKey.json",
-                "main.js"
+                "firebase/serviceAccountKey.json"
             ]
         },
         "hosting": {
@@ -74,7 +73,7 @@
             "omitRoot": true,
             "build": [
                 "app",
-                "feature1"
+                "features"
             ],
             "plugins": ["copy_files", "web_modules", "minify_files"],
             "copy": [

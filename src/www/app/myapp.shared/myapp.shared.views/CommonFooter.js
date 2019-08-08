@@ -16,6 +16,15 @@ Class('(auto)', VueComponent, function() {
         strings: "./strings.json"
     };    
 
+    this.style = `
+    .footer.bottom {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 0.9em;  
+    }    
+    `;
+
     this.html = `
     <footer class="footer bottom">
         <div class="container">

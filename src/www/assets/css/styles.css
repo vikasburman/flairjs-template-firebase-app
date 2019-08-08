@@ -4,10 +4,3 @@ html, body {
   background: #f2f2f2;
   font-family: Abel, Arial, Verdana, sans-serif;
 }
-
-.footer.bottom {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 0.9em;  
-}

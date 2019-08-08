@@ -10,14 +10,14 @@ $$('ns', '(auto)');
 Class('(auto)', VueView, function() {
     this.title = "Home";
     this.layout = new CommonLayout();
-    this.html = './HomeView/index.html';
-    this.style = './HomeView/styles.css';
     this.i18n = {
         titles: "./titles.json",
         strings: "./strings.json"
     };
+    this.html = './HomeView/index.html';
+    this.style = './HomeView/styles.css';
     this.data = {
-        now: '** loading **';
+        now: 'loading...'
     };
 
     $$('override');

@@ -1,25 +1,22 @@
 {
-    "global": {
+    "flair": {
         "api": {
-            "roots": {
-                "local": "http://localhost:5001/flairjs-firebase-app/us-east1/",
-                "dev": "https://us-east1-flairjs-firebase-app.cloudfunctions.net/",
-                "test": "",
-                "prod": ""
-            },
-            "version": "",
-            "cache": {
-                "policies": {
-                    "cachePolicyType1": {
-                        "duration": 10000
+            "connections": {
+                "connection1": {
+                    "R": {
+                        "local": "http://localhost:5001/*P*/*G*",
+                        "dev": "https://*G*-*P*.cloudfunctions.net",
+                        "test": "",
+                        "prod": ""
                     },
-                    "cachePolicyType2": {
-                        "duration": 5000
-                    }
+                    "V": "",
+                    "L": "",
+                    "P": "flairjs-firebase-app",
+                    "G": "us-east1"
                 }
             }
-        }
-    },
+        }     
+    },    
 
     "flair.app": {
         "app": "myapp.main.App",

@@ -12,6 +12,9 @@
                 "policies": {
                     "cachePolicyType1": {
                         "duration": 10000
+                    },
+                    "cachePolicyType2": {
+                        "duration": 5000
                     }
                 }
             }

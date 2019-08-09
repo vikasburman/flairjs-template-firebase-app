@@ -9,4 +9,4 @@ let _functions = start(__dirname, __filename, (flair, app) => {
 });
 for(let f in _functions) {
     exports[f] = _functions[f];
-}
+} // functions are ready now

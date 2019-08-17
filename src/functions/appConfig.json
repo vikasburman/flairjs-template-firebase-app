@@ -35,14 +35,6 @@
     },
     "worker:flair.app": {
         "boot": {
-            "files": [
-            ],
-            "preambles": [
-                "./app",
-                "./shared",
-                "./fbapp1",
-                "./fbapp2"
-            ],            
             "bootwares": [
                 "flair.boot.DIContainer"
             ]
@@ -111,5 +103,4 @@
             ]                                  
         }
     }
-
 }

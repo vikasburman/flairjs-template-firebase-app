@@ -1,12 +1,12 @@
 [
-    {   "name": "api", "enabled": true, 
-        "type": "http", "groups": ["fbapp1", "fbapp2"],
+    {   "name": "api", "type": "http", "enabled": true,  
+        "groups": ["fbapp1", "fbapp2"],
         "config": {
             "region": "us-central1"
         }
     },
-    {   "name": "apix", "enabled": false, 
-        "type": "http", "groups": ["fbapp1", "fbapp2"],
+    {   "name": "apix", "type": "http", "enabled": false, 
+        "groups": ["fbapp1", "fbapp2"],
         "config": {
             "region": "us-central1",
             "runtimeOpts": {
@@ -15,20 +15,20 @@
             }
         }
     },
-    {   "name": "<funcName>", "enabled": false,
-        "type": "direct", "group": "",
+    {   "name": "<funcName>", "type": "direct", "enabled": false,
+        "group": "",
         "handler": "<qualifiedTypeName>"
     },
-    {   "name": "<funcName>", "enabled": false, 
-        "type": "cron", "group": "",
+    {   "name": "<funcName>", "type": "cron", "enabled": false, 
+        "group": "",
         "handler": "<qualifiedTypeName>", 
         "config": {
             "when": "every 5 minutes", 
             "timeZone": "America/New_York"
         }
     },
-    {   "name": "<funcName>", "enabled": false, 
-        "type": "trigger", "group": "",
+    {   "name": "<funcName>", "type": "trigger", "enabled": false, 
+        "group": "",
         "source": "<sourceType>", 
         "trigger": "<triggerType>",
         "handler": "<qualifiedTypeName>",

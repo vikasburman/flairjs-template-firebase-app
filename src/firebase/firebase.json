@@ -1,0 +1,50 @@
+{
+  "database": {
+    "rules": "database/database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore/firestore.rules",
+    "indexes": "firestore/firestore.indexes.json"
+  },
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": [
+    {
+      "target": "fbsite1",
+      "public": "hosting/fbsite1",
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "rewrites": [
+        {
+          "source": "/fbapp1/api/**",
+          "function": "fbapp1-api"
+        },
+        {
+          "source": "/fbapp1/apix/**",
+          "function": "fbapp1-apix"
+        }
+      ]
+    },
+    {
+      "target": "fbsite2",
+      "public": "hosting/fbsite2",
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "rewrites": [
+        {
+          "source": "/fbapp2/api/**",
+          "function": "fbapp2-api"
+        },
+        {
+          "source": "/fbapp2/apix/**",
+          "function": "fbapp2-apix"
+        }
+      ]
+    }
+  ],
+  "storage": {
+    "rules": "storage/storage.rules"
+  }
+}
+  

@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "dev": "flairjs-firebase-app"
+  },
+  "targets": {
+    "flairjs-firebase-app": {
+      "hosting": {
+        "fbsite1": [
+          "fbsite1"
+        ],
+        "fbsite2": [
+          "fbsite2"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+    "flair": {
+        "api": {
+            "connections": {
+                "auto": "/fbapp2/api/",
+                "example1": {
+                    "R": {
+                        "local": "http://localhost:5001/*P*/*G*",
+                        "dev": "https://*G*-*P*.cloudfunctions.net",
+                        "test": "",
+                        "prod": ""
+                    },
+                    "V": "",
+                    "L": "",
+                    "P": "flairjs-firebase-app",
+                    "G": "us-east1"
+                }
+            }
+        }     
+    },    
+
+    "flair.app": {
+        "app": "myapp.main.App",
+
+        "boot": {
+            "links": [
+                { "rel": "stylesheet", "href": "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" },
+                { "rel": "stylesheet", "href": "./assets/css/styles.css" }
+            ],
+            "files": [
+            ],
+            "preambles": [
+                "flairjs-fabric",
+                "./app",
+                "./features"
+            ],
+            "bootwares": [
+                "flair.boot.DIContainer",
+                "flair.boot.vue.VueSetup",
+                "flair.boot.ClientRouter"
+            ]
+        },
+
+        "di": {
+            "container": {
+            }
+        }
+    },
+    "worker:flair.app": {
+        "boot": {
+            "files": [
+            ],
+            "preambles": [
+                "./app",
+                "./features"
+            ],
+            "bootwares": [
+                "flair.boot.DIContainer"
+            ]
+        }
+    },
+
+    "flair.client": {
+        "view": {
+            "el": "main",
+            "title": "My App",
+            "transition": ""
+        },      
+        
+        "ui": {
+            "vue": {
+                "extensions": []
+            }
+        },
+
+        "routes": {
+            "home": "myapp.feature1.views.home",
+            "notfound": "myapp.feature1.views.notfound"
+        },
+
+        "i18n": {
+            "lang": {
+                "default": "en",
+                "locales": [
+                    { "code": "en", "name": "English", "native": "English" },
+                    { "code": "hi", "name": "Hindi", "native": "हिंदी" }
+                ]
+            }
+        },
+
+        "routing": {
+            "mounts": {
+                "main": "/"
+            },
+            "main-settings": [
+                { "name": "hashbang", "value": false },
+                { "name": "lang", "value": false },
+                { "name": "sensitive", "value": false }
+            ],
+            "main-interceptors": [
+            ]
+        }
+    }
+}

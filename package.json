@@ -3,7 +3,7 @@
     "title": "yourapp name",
     "description": "yourapp description",
     "copyright": "yourapp copyright",
-    "version": "0.9.163",
+    "version": "0.9.180",
     "author": "yourapp author <yourapp@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -27,9 +27,9 @@
         "test": "gulp test --TEST --options ./config/test.json",
         "test-client": "gulp test --TEST --client --options ./config/test.json",
         "serve": "cd ./dist && firebase serve",
-        "deploy": "cd ./dist && firebase deploy",
-        "deploy-hosting": "cd ./dist && firebase deploy --only hosting",
-        "deploy-functions": "cd ./dist && firebase deploy --only functions"
+        "deploy": "cd ./dist && firebase deploy --project dev",
+        "deploy-fb1": "cd ./dist && firebase deploy --project dev --only firestore,database,storage,hosting:fbsite1,functions:fbapp1",
+        "deploy-fb2": "cd ./dist && firebase deploy --project dev --only firestore,database,storage,hosting:fbsite2,functions:fbapp2"
     },
     "devDependencies": {
         "clean-css": "^4.2.1",
@@ -54,8 +54,8 @@
         "firebase": "^6.3.4",
         "firebase-admin": "^8.3.0",
         "firebase-functions": "^3.2.0",
-        "flairjs": "^0.55.30",
-        "flairjs-fabric": "^0.55.30",
+        "flairjs": "^0.55.38",
+        "flairjs-fabric": "^0.55.40",
         "http-shutdown": "^1.2.1",
         "node-env-file": "^0.1.8",
         "node-fetch": "^2.6.0",

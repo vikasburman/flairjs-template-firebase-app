@@ -6,16 +6,26 @@
         { "name": "minify_files", "file": "minify_files.js" }
     ],    
     "build": [
-        { "profile": "firebase" },
         { "profile": "database" },
-        { "profile": "storage" },
+        { "profile": "firebase" },
         { "profile": "firestore" },
         { "profile": "functions" },
-        { "profile": "hosting" }
+        { "profile": "hosting_fbsite1" },
+        { "profile": "hosting_fbsite2" },
+        { "profile": "mobile" },
+        { "profile": "storage" }
     ],
     "profiles": {
+        "database": {
+            "root": "database",
+            "dest": "/database",
+            "plugins": ["copy_files"],
+            "copy": [
+                "database.rules.json"
+            ]
+        },          
         "firebase": {
-            "root": "server/firebase",
+            "root": "firebase",
             "dest": "/",
             "plugins": ["copy_files"],
             "copy": [
@@ -23,53 +33,37 @@
                 ".firebaserc"
             ]
         },      
-        "database": {
-            "root": "server/firebase/database",
-            "dest": "/database",
-            "plugins": ["copy_files"],
-            "copy": [
-                "database.rules.json"
-            ]
-        },  
-        "storage": {
-            "root": "server/firebase/storage",
-            "dest": "/storage",            
-            "plugins": ["copy_files"],
-            "copy": [
-                "storage.rules"
-            ]
-        },                   
         "firestore": {
-            "root": "server/firebase/firestore",
+            "root": "firestore",
             "dest": "/firestore",             
             "plugins": ["copy_files"],
             "copy": [
                 "firestore.indexes.json",
                 "firestore.rules"
             ]
-        },                   
+        }, 
         "functions": {
-            "root": "server",
+            "root": "functions",
             "dest": "/functions",
             "omitRoot": true,
             "skipMinify": true,
             "build": [
                 "app",
-                "features"
+                "shared",
+                "fbapp1",
+                "fbapp2"
             ],
             "plugins": ["copy_files", "node_modules"],
             "copy": [
                 "private",
                 "appConfig.json",
-                "main.js",
-                "firebase/firebaseConfig.json",
-                "firebase/functionsConfig.json",
-                "firebase/serviceAccountKey.json"
+                "functions.json",
+                "main.js"
             ]
-        },
-        "hosting": {
-            "root": "www",
-            "dest": "/public",
+        },        
+        "hosting_fbsite1": {
+            "root": "hosting/fbsite1",
+            "dest": "/hosting/fbsite1",
             "omitRoot": true,
             "build": [
                 "app",
@@ -92,6 +86,45 @@
             "minify": [
                 "modules/requirejs/require.js"
             ]
-        }
+        },
+        "hosting_fbsite2": {
+            "root": "hosting/fbsite2",
+            "dest": "/hosting/fbsite2",
+            "omitRoot": true,
+            "build": [
+                "app",
+                "features"
+            ],
+            "plugins": ["copy_files", "web_modules", "minify_files"],
+            "copy": [
+                "assets",
+                "favicon.png",
+                "webConfig.json",
+                "index.html",
+                "index.js"
+            ],
+            "modules": [
+                "flairjs",
+                "flairjs-fabric",
+                "requirejs",
+                "vue/dist"
+            ],
+            "minify": [
+                "modules/requirejs/require.js"
+            ]
+        },     
+        "mobile": {
+            "root": "mobile",
+            "dest": "/mobile",             
+            "plugins": []
+        },            
+        "storage": {
+            "root": "storage",
+            "dest": "/storage",            
+            "plugins": ["copy_files"],
+            "copy": [
+                "storage.rules"
+            ]
+        }        
     }
 }

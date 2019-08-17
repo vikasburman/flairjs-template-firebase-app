@@ -1,0 +1,115 @@
+{
+    "flair": {
+        "api": {
+            "connections": {
+            }
+        }     
+    },
+    
+    "flair.app": {
+        "app": "myapp.main.App",
+
+        "boot": {
+            "files": [
+            ],
+            "preambles": [
+                "flairjs-fabric",
+                "./app",
+                "./shared",
+                "./fbapp1",
+                "./fbapp2"
+            ],            
+            "bootwares": [
+                "flair.boot.NodeEnv",
+                "flair.boot.Middlewares",
+                "flair.boot.ResHeaders",
+                "flair.boot.DIContainer",
+                "flair.boot.ServerRouter"
+            ]
+        },
+
+        "di": {
+            "container": {
+            }
+        }
+    },
+    "worker:flair.app": {
+        "boot": {
+            "files": [
+            ],
+            "preambles": [
+                "./app",
+                "./shared",
+                "./fbapp1",
+                "./fbapp2"
+            ],            
+            "bootwares": [
+                "flair.boot.DIContainer"
+            ]
+        }
+    },
+
+    "flair.server": {
+        "firebase": {
+            "firebaseApps": "./private/firebaseApps.json",
+            "serviceAccount": "./private/serviceAccount-Local.json"
+        },
+
+        "envVars": {
+            "vars": [
+                "./private/.env"
+            ]
+        },
+
+        "routing": {
+            "mounts": {
+                "main": "/",
+                "fbapp1": "/fbapp1/api/",
+                "fbapp2": "/fbapp2/api/"
+            },
+            
+            "main-settings": [
+                { "name": "case sensitive routing", "value": false },
+                { "name": "strict routing", "value": false }
+            ],
+            "main-middlewares": [
+                { "name": "cors", "args": [{ "origin": true }] }
+            ],  
+            "main-interceptors": [
+            ],          
+            "main-resHeaders": [
+                { "name": "X-Built-On", "value": "flairjs" },
+                { "name": "Access-Control-Allow-Origin", "value": "*" }
+            ],
+
+            "fbapp1-settings": [
+                { "name": "case sensitive routing", "value": false },
+                { "name": "strict routing", "value": false }
+            ],
+            "fbapp1-middlewares": [
+                { "name": "cors", "args": [{ "origin": true }] }
+            ],  
+            "fbapp1-interceptors": [
+            ],          
+            "fbapp1-resHeaders": [
+                { "name": "X-Built-On", "value": "flairjs" },
+                { "name": "Access-Control-Allow-Origin", "value": "*" }                
+            ],
+
+            "fbapp2-settings": [
+                { "name": "case sensitive routing", "value": false },
+                { "name": "strict routing", "value": false }
+            ],
+            "fbapp2-middlewares": [
+                { "name": "cors", "args": [{ "origin": true }] }
+            ],  
+            "fbapp2-interceptors": [
+            ],          
+            "fbapp2-resHeaders": [
+                { "name": "X-Built-On", "value": "flairjs" },
+                { "name": "Access-Control-Allow-Origin", "value": "*" }                
+            ]                                  
+        }
+    }
+
+}

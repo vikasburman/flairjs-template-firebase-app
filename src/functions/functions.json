@@ -1,0 +1,37 @@
+[
+    {   "name": "api", "enabled": true, 
+        "type": "http", "groups": ["fbapp1", "fbapp2"],
+        "config": {
+            "region": "us-east1"
+        }
+    },
+    {   "name": "apix", "enabled": false, 
+        "type": "http", "groups": ["fbapp1", "fbapp2"],
+        "config": {
+            "region": "us-east1",
+            "runtimeOpts": {
+                "timeoutSeconds": 300,
+                "memory": "1GB"
+            }
+        }
+    },
+    {   "name": "<funcName>", "enabled": false,
+        "type": "direct", "group": "",
+        "handler": "<qualifiedTypeName>"
+    },
+    {   "name": "<funcName>", "enabled": false, 
+        "type": "cron", "group": "",
+        "handler": "<qualifiedTypeName>", 
+        "config": {
+            "when": "every 5 minutes", 
+            "timeZone": "America/New_York"
+        }
+    },
+    {   "name": "<funcName>", "enabled": false, 
+        "type": "trigger", "group": "",
+        "source": "<sourceType>", 
+        "trigger": "<triggerType>",
+        "handler": "<qualifiedTypeName>",
+        "config": {}
+    }        
+]

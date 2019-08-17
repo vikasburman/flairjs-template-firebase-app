@@ -7,9 +7,16 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Client Mode",
+            "name": "Client Mode (fbsite1)",
             "url": "http://localhost:5000",
-            "webRoot": "${workspaceFolder}/dist/public/"
+            "webRoot": "${workspaceFolder}/dist/hosting/fbsite1/"
+        },        
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Client Mode (fbsite2)",
+            "url": "http://localhost:5000",
+            "webRoot": "${workspaceFolder}/dist/hosting/fbsite2/"
         },        
         {
             "type": "node",

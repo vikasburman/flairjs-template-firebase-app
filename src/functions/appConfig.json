@@ -73,7 +73,6 @@
                 { "name": "strict routing", "value": false }
             ],
             "main-middlewares": [
-                { "name": "cors", "args": [{ "origin": true }] }
             ],  
             "main-interceptors": [
             ],          
@@ -87,7 +86,8 @@
                 { "name": "strict routing", "value": false }
             ],
             "fbapp1-middlewares": [
-                { "name": "cors", "args": [{ "origin": true }] }
+                { "name": "cors", "args": [{ "origin": ["*"] }] }
+
             ],  
             "fbapp1-interceptors": [
             ],          
@@ -101,7 +101,7 @@
                 { "name": "strict routing", "value": false }
             ],
             "fbapp2-middlewares": [
-                { "name": "cors", "args": [{ "origin": true }] }
+                { "name": "cors", "args": [{ "origin": ["*"] }] }
             ],  
             "fbapp2-interceptors": [
             ],          

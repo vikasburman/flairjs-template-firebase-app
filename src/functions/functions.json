@@ -2,13 +2,13 @@
     {   "name": "api", "enabled": true, 
         "type": "http", "groups": ["fbapp1", "fbapp2"],
         "config": {
-            "region": "us-east1"
+            "region": "us-central1"
         }
     },
     {   "name": "apix", "enabled": false, 
         "type": "http", "groups": ["fbapp1", "fbapp2"],
         "config": {
-            "region": "us-east1",
+            "region": "us-central1",
             "runtimeOpts": {
                 "timeoutSeconds": 300,
                 "memory": "1GB"

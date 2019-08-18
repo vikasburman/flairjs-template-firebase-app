@@ -8,7 +8,6 @@
                         "R": {
                             "local": "http://localhost:5001/*P*/*G*",
                             "dev": "https://*G*-*P*.cloudfunctions.net",
-                            "test": "",
                             "stage": "",
                             "prod": ""
                         },
@@ -37,6 +36,8 @@
                 "./app",
                 "./features"
             ],
+            "ports": {
+            },       
             "bootwares": [
                 "flair.boot.DIContainer",
                 "flair.boot.vue.VueSetup",

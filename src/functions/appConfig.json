@@ -17,7 +17,9 @@
                 "./shared",
                 "./fbapp1",
                 "./fbapp2"
-            ],            
+            ],     
+            "ports": {
+            },       
             "bootwares": [
                 "flair.boot.NodeEnv",
                 "flair.boot.Middlewares",

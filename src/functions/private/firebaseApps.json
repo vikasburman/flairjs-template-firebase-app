@@ -1,20 +1,22 @@
 {
-    "fbapp1": {
-        "apiKey": "AIzaSyDjv3PArqeS9mSiJ07KRV0-c6__uF5ZRKE",
-        "authDomain": "flairjs-firebase-app.firebaseapp.com",
-        "databaseURL": "https://flairjs-firebase-app.firebaseio.com",
-        "projectId": "flairjs-firebase-app",
-        "storageBucket": "flairjs-firebase-app.appspot.com",
-        "messagingSenderId": "784875702853",
-        "appId": "1:784875702853:web:7cf36ff2b033bc2c"
-    },
-    "fbapp2": {
-        "apiKey": "AIzaSyDjv3PArqeS9mSiJ07KRV0-c6__uF5ZRKE",
-        "authDomain": "flairjs-firebase-app.firebaseapp.com",
-        "databaseURL": "https://flairjs-firebase-app.firebaseio.com",
-        "projectId": "flairjs-firebase-app",
-        "storageBucket": "flairjs-firebase-app.appspot.com",
-        "messagingSenderId": "784875702853",
-        "appId": "1:784875702853:web:f6482be00b77440f"
+    "flairjs-firebase-app": {
+        "fbapp1": {
+            "apiKey": "AIzaSyDjv3PArqeS9mSiJ07KRV0-c6__uF5ZRKE",
+            "authDomain": "flairjs-firebase-app.firebaseapp.com",
+            "databaseURL": "https://flairjs-firebase-app.firebaseio.com",
+            "projectId": "flairjs-firebase-app",
+            "storageBucket": "flairjs-firebase-app.appspot.com",
+            "messagingSenderId": "784875702853",
+            "appId": "1:784875702853:web:7cf36ff2b033bc2c"
+        },
+        "fbapp2": {
+            "apiKey": "AIzaSyDjv3PArqeS9mSiJ07KRV0-c6__uF5ZRKE",
+            "authDomain": "flairjs-firebase-app.firebaseapp.com",
+            "databaseURL": "https://flairjs-firebase-app.firebaseio.com",
+            "projectId": "flairjs-firebase-app",
+            "storageBucket": "flairjs-firebase-app.appspot.com",
+            "messagingSenderId": "784875702853",
+            "appId": "1:784875702853:web:f6482be00b77440f"
+        }        
     }
 }

@@ -1,23 +1,26 @@
 {
-    "flair": {
-        "api": {
-            "connections": {
-                "auto": "/fbapp2/api/",
-                "example1": {
-                    "R": {
-                        "local": "http://localhost:5001/*P*/*G*",
-                        "dev": "https://*G*-*P*.cloudfunctions.net",
-                        "test": "",
-                        "prod": ""
-                    },
-                    "V": "",
-                    "L": "",
-                    "P": "flairjs-firebase-app",
-                    "G": "us-east1"
+    "global": {
+        "flair": {
+            "api": {
+                "connections": {
+                    "auto": "/fbapp2/api/",
+                    "example1": {
+                        "R": {
+                            "local": "http://localhost:5001/*P*/*G*",
+                            "dev": "https://*G*-*P*.cloudfunctions.net",
+                            "test": "",
+                            "stage": "",
+                            "prod": ""
+                        },
+                        "V": "",
+                        "L": "",
+                        "P": "flairjs-firebase-app",
+                        "G": "us-east1"
+                    }
                 }
-            }
-        }     
-    },    
+            }     
+        } 
+    },   
 
     "flair.app": {
         "app": "myapp.main.App",

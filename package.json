@@ -61,7 +61,7 @@
         "firebase-admin": "^8.3.0",
         "firebase-functions": "^3.2.0",
         "flairjs": "^0.55.56",
-        "flairjs-fabric": "^0.55.58",
+        "flairjs-fabric": "^0.55.59",
         "http-shutdown": "^1.2.1",
         "node-env-file": "^0.1.8",
         "node-fetch": "^2.6.0",

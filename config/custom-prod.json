@@ -64,7 +64,8 @@
             "env": {
                 "type": "server",
                 "vars": {
-                    "FLAIR_SYMBOLS": "PROD"
+                    "FLAIR_SYMBOLS": "PROD",
+                    "FIREBASE_PROJECT_ID": "flairjs-firebase-app"
                 }
             }            
         },        

@@ -3,7 +3,8 @@
         { "name": "node_modules", "file": "node_modules.js", "settings": { "cmd": "yarn install --prod" } },
         { "name": "web_modules", "file": "web_modules.js" },
         { "name": "copy_files", "file": "copy_files.js" },
-        { "name": "minify_files", "file": "minify_files.js" }
+        { "name": "minify_files", "file": "minify_files.js" },
+        { "name": "write_env", "file": "write_env.js" }        
     ],    
     "build": [
         { "profile": "database" },
@@ -53,13 +54,19 @@
                 "fbapp1",
                 "fbapp2"
             ],
-            "plugins": ["copy_files", "node_modules"],
+            "plugins": ["copy_files", "node_modules", "write_env"],
             "copy": [
                 "private",
                 "appConfig.json",
                 "functions.json",
                 "main.js"
-            ]
+            ],
+            "env": {
+                "type": "server",
+                "vars": {
+                    "FLAIR_SYMBOLS": "DEV,DEBUG"
+                }
+            }            
         },        
         "hosting_fbsite1": {
             "root": "hosting/fbsite1",
@@ -69,7 +76,7 @@
                 "app",
                 "features"
             ],
-            "plugins": ["copy_files", "web_modules", "minify_files"],
+            "plugins": ["copy_files", "web_modules", "minify_files", "write_env"],
             "copy": [
                 "assets",
                 "favicon.png",
@@ -85,7 +92,13 @@
             ],
             "minify": [
                 "modules/requirejs/require.js"
-            ]
+            ],
+            "env": {
+                "type": "client",
+                "vars": {
+                    "FLAIR_SYMBOLS": "DEV,DEBUG"
+                }
+            }            
         },
         "hosting_fbsite2": {
             "root": "hosting/fbsite2",
@@ -95,7 +108,7 @@
                 "app",
                 "features"
             ],
-            "plugins": ["copy_files", "web_modules", "minify_files"],
+            "plugins": ["copy_files", "web_modules", "minify_files", "write_env"],
             "copy": [
                 "assets",
                 "favicon.png",
@@ -111,7 +124,13 @@
             ],
             "minify": [
                 "modules/requirejs/require.js"
-            ]
+            ],
+            "env": {
+                "type": "client",
+                "vars": {
+                    "FLAIR_SYMBOLS": "DEV,DEBUG"
+                }
+            }            
         },     
         "mobile": {
             "root": "mobile",

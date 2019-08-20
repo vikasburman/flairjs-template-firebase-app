@@ -6,7 +6,7 @@
     "cache": "./temp",
 
     "customBuild": true,
-    "customBuildConfig": "./config/custom-dev.json",
+    "customBuildConfig": "./config/custom.json",
 
     "fullBuild": false,
     "clean": true,

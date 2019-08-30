@@ -33,7 +33,7 @@
         "flag": "flair flag --options ./config/build/options.json",
         "test": "flair test --options ./config/test/options.json",
         "test-client": "flair test --options ./config/test/options.json --client",
-        "serve": "cd ./dist && firebase serve --project dev",
+        "serve": "nodemon --watch ./src --delay 5 --exec 'yarn build-quick && cd ./dist && firebase serve --project dev'",
         "deploy": "cd ./dist && firebase deploy --project dev",
         "deploy-fb1": "cd ./dist && firebase deploy --project dev --only firestore,database,storage,hosting:fbsite1,functions:fbapp1",
         "deploy-fb2": "cd ./dist && firebase deploy --project dev --only firestore,database,storage,hosting:fbsite2,functions:fbapp2",
@@ -42,7 +42,8 @@
         "deploy-prod-fb2": "cd ./dist && firebase deploy --project prod --only firestore,database,storage,hosting:fbsite2,functions:fbapp2"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.55.88"
+        "flairjs-cli": "^0.55.88",
+        "nodemon": "^1.19.1"
     },
     "dependencies": {
         "firebase": "^6.5.0",

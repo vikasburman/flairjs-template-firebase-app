@@ -58,7 +58,7 @@
                 "private",
                 "appConfig.json",
                 "functions.json",
-                "main.js"
+                "~/node_modules/flairjs-fabric/flair.server/main-firebase.js >> ./main.js"
             ],
             "flags": {
                 "dev": {

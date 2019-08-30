@@ -3,7 +3,7 @@
     "title": "yourapp name",
     "description": "yourapp description",
     "copyright": "yourapp copyright",
-    "version": "0.9.210",
+    "version": "0.9.211",
     "author": "yourapp author <yourapp@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -50,7 +50,7 @@
         "firebase-admin": "^8.3.0",
         "firebase-functions": "^3.2.0",
         "flairjs": "^0.55.73",
-        "flairjs-fabric": "^0.55.75",
+        "flairjs-fabric": "^0.55.76",
         "flairjs-fabric-defaults": "^0.55.79"
     }
 }

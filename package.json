@@ -50,6 +50,6 @@
         "firebase-functions": "^3.2.0",
         "flairjs": "^0.55.73",
         "flairjs-fabric": "^0.55.75",
-        "flairjs-fabric-defaults": "^0.55.79"        
+        "flairjs-fabric-defaults": "^0.55.79"  
     }
 }

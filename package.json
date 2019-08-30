@@ -3,7 +3,7 @@
     "title": "yourapp name",
     "description": "yourapp description",
     "copyright": "yourapp copyright",
-    "version": "0.9.206",
+    "version": "0.9.209",
     "author": "yourapp author <yourapp@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -42,13 +42,14 @@
         "deploy-prod-fb2": "cd ./dist && firebase deploy --project prod --only firestore,database,storage,hosting:fbsite2,functions:fbapp2"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.55.87"
+        "flairjs-cli": "^0.55.88"
     },
     "dependencies": {
         "firebase": "^6.5.0",
         "firebase-admin": "^8.3.0",
         "firebase-functions": "^3.2.0",
         "flairjs": "^0.55.73",
-        "flairjs-fabric": "^0.55.74"
+        "flairjs-fabric": "^0.55.75",
+        "flairjs-fabric-defaults": "^0.55.79"        
     }
 }

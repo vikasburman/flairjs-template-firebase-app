@@ -39,7 +39,7 @@
             },       
             "bootwares": [
                 "flair.boot.DIContainer",
-                "flair.boot.vue.VueSetup",
+                "flair.boot.VueSetup",
                 "flair.boot.ClientRouter"
             ]
         },
@@ -63,15 +63,12 @@
 
     "flair.client": {
         "view": {
-            "el": "main",
             "title": "My App",
             "transition": ""
         },      
         
-        "ui": {
-            "vue": {
-                "extensions": []
-            }
+        "vue": {
+            "extensions": []
         },
 
         "routes": {

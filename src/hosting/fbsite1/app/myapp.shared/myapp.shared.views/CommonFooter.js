@@ -1,4 +1,4 @@
-const { VueComponent } = ns('flair.ui.vue');
+const { VueComponent } = await ns('flair.ui');
 
 /**
  * @name CommonHeader

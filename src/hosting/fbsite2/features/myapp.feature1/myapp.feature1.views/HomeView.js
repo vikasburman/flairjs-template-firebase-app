@@ -1,6 +1,6 @@
-const VueView = await include('flair.ui.vue.VueView');
+const { VueView } = await ns('flair.ui');
 const CommonLayout = await include('myapp.shared.views.CommonLayout');
-const { ServerDateTime } = ns('myapp.feature1.services');
+const ServerDateTime = await include('myapp.feature1.services.ServerDateTime');
 
 /**
  * @name HomeView

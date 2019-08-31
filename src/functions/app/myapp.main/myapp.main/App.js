@@ -1,4 +1,6 @@
-const { App, FirebaseApp } = ns('flair.app');
+const { App } = await ns('flair.app');
+const FirebaseApp = await include('flair.app.FirebaseApp');
+
 /**
  * @name App
  * @description App

@@ -1,5 +1,5 @@
-const RESTEndPoint = await include('flair.api.RESTEndPoint');
-const { CurrentTime } = ns('myapp.feature1');
+const { RESTEndPoint } = await ns('flair.api');
+const CurrentTime = await include('myapp.feature1.CurrentTime');
 
 /**
  * @name Now

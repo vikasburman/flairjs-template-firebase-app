@@ -57,48 +57,65 @@
                 "fbapp1": "/fbapp1/api/",
                 "fbapp2": "/fbapp2/api/"
             },
-            
-            "main-settings": [
-                { "name": "case sensitive routing", "value": false },
-                { "name": "strict routing", "value": false }
-            ],
-            "main-middlewares": [
-            ],  
-            "main-interceptors": [
-            ],          
-            "main-resHeaders": [
-                { "name": "X-Built-On", "value": "flairjs" },
-                { "name": "Access-Control-Allow-Origin", "value": "*" }
-            ],
-
-            "fbapp1-settings": [
-                { "name": "case sensitive routing", "value": false },
-                { "name": "strict routing", "value": false }
-            ],
-            "fbapp1-middlewares": [
-                { "name": "cors", "args": [{ "origin": ["*"] }] }
-
-            ],  
-            "fbapp1-interceptors": [
-            ],          
-            "fbapp1-resHeaders": [
-                { "name": "X-Built-On", "value": "flairjs" },
-                { "name": "Access-Control-Allow-Origin", "value": "*" }                
-            ],
-
-            "fbapp2-settings": [
-                { "name": "case sensitive routing", "value": false },
-                { "name": "strict routing", "value": false }
-            ],
-            "fbapp2-middlewares": [
-                { "name": "cors", "args": [{ "origin": ["*"] }] }
-            ],  
-            "fbapp2-interceptors": [
-            ],          
-            "fbapp2-resHeaders": [
-                { "name": "X-Built-On", "value": "flairjs" },
-                { "name": "Access-Control-Allow-Origin", "value": "*" }                
-            ]                                  
+            "all": {
+                "before": {
+                    "settings": [
+                        { "name": "case sensitive routing", "value": false },
+                        { "name": "strict routing", "value": false }
+                    ],
+                    "middlewares": [
+                    ],  
+                    "interceptors": [
+                    ],          
+                    "resHeaders": [
+                    ]
+                },
+                "after": {
+                    "settings": [
+                    ],
+                    "middlewares": [
+                    ],  
+                    "interceptors": [
+                    ],          
+                    "resHeaders": [
+                        { "name": "X-Built-On", "value": "flairjs" },
+                        { "name": "Access-Control-Allow-Origin", "value": "*" }
+                    ]
+                }
+            },
+            "main": {
+                "settings": [
+                ],
+                "middlewares": [
+                ],  
+                "interceptors": [
+                ],          
+                "resHeaders": [
+                ]
+            },
+            "fbapp1": {
+                "settings": [
+                ],
+                "middlewares": [
+                    { "name": "cors", "args": [{ "origin": ["*"] }] }
+    
+                ],  
+                "interceptors": [
+                ],          
+                "resHeaders": [
+                ]
+            },
+            "fbapp2": {
+                "settings": [
+                ],
+                "middlewares": [
+                    { "name": "cors", "args": [{ "origin": ["*"] }] }
+                ],  
+                "interceptors": [
+                ],          
+                "resHeaders": [
+                ]
+            }
         }
     }
 }

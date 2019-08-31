@@ -9,6 +9,10 @@
         "app": "myapp.main.App",
 
         "boot": {
+            "env": {
+                "isExpress": true,
+                "isFirebase": true
+            },            
             "preambles": [
                 "./app",
                 "./shared",
@@ -23,7 +27,9 @@
                 "flair.boot.ResHeaders",
                 "flair.boot.DIContainer",
                 "flair.boot.ServerRouter"
-            ]
+            ],
+            "assemblies": [
+            ]            
         },
 
         "di": {
@@ -40,17 +46,14 @@
     },
 
     "flair.server": {
-        "firebase": {
-            "firebaseApps": "./private/firebaseApps.json",
-            "serviceAccount": "./private/serviceAccount-Local.json"
-        },
-
         "envVars": {
             "vars": [
                 "./private/.env"
             ]
-        },
+        }
+    },
 
+    "flair.server.express": {
         "routing": {
             "mounts": {
                 "main": "/",
@@ -116,6 +119,13 @@
                 "resHeaders": [
                 ]
             }
+        }
+    },
+
+    "flair.server.firebase": {
+        "firebase": {
+            "firebaseApps": "./private/firebaseApps.json",
+            "serviceAccount": "./private/serviceAccount-Local.json"
         }
     }
 }

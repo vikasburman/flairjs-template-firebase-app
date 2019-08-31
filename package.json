@@ -39,7 +39,8 @@
         "deploy-fb2": "cd ./dist && firebase deploy --project dev --only firestore,database,storage,hosting:fbsite2,functions:fbapp2",
         "deploy-prod": "cd ./dist && firebase deploy --project prod",
         "deploy-prod-fb1": "cd ./dist && firebase deploy --project prod --only firestore,database,storage,hosting:fbsite1,functions:fbapp1",
-        "deploy-prod-fb2": "cd ./dist && firebase deploy --project prod --only firestore,database,storage,hosting:fbsite2,functions:fbapp2"
+        "deploy-prod-fb2": "cd ./dist && firebase deploy --project prod --only firestore,database,storage,hosting:fbsite2,functions:fbapp2",
+        "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn remove flairjs-fabric-defaults && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric && yarn add flairjs-fabric-defaults"
     },
     "devDependencies": {
         "flairjs-cli": "^0.55.88",

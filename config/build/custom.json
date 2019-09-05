@@ -1,9 +1,6 @@
 {
     "plugins": [
         { "name": "node_modules", "settings": { "cmd": "yarn install --prod" } },
-        { "name": "web_modules" },
-        { "name": "copy_files" },
-        { "name": "minify_files" },
         { "name": "write_flags", "settings": { "defaultFlag": "dev" } }
     ],    
     "build": [

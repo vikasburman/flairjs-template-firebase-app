@@ -11,6 +11,7 @@
         "boot": {
             "env": {
                 "isExpress": true,
+                "isServerless": true,
                 "isFirebase": true
             },            
             "preambles": [
@@ -20,7 +21,7 @@
                 "./fbapp2"
             ],     
             "ports": {
-            },       
+            },
             "bootwares": [
                 "flair.boot.NodeEnv",
                 "flair.boot.Middlewares",

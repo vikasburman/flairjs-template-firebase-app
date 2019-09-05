@@ -19,7 +19,7 @@ Class('(auto)', VueView, function() {
         <div class="card">
             <p></p>
             <h1>404</h1>
-            <h2>{{ i18n('strings', 'notfound', 'Not Found') }}</h2>
+            <h2>{{ i18n('@strings.notfound | Not Found') }}</h2>
             <h4>{{ page }}</h4>
         </div>
     </div>

@@ -3,7 +3,7 @@
     "title": "yourapp name",
     "description": "yourapp description",
     "copyright": "yourapp copyright",
-    "version": "0.9.212",
+    "version": "0.10.1",
     "author": "yourapp author <yourapp@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -33,25 +33,29 @@
         "flag": "flair flag --options ./config/build/options.json",
         "test": "flair test --options ./config/test/options.json",
         "test-client": "flair test --options ./config/test/options.json --client",
-        "serve": "nodemon --watch ./src --delay 5 --ext js,css,html,json,png,jpg,gif --exec 'yarn build-quick && cd ./dist && firebase serve --project dev'",
+        "serve": "nodemon --watch ./src --delay 5 --ext js,css,html,json,png,jpg,gif,xml --exec 'yarn build-quick && cd ./dist && firebase serve --project dev'",
         "deploy": "cd ./dist && firebase deploy --project dev",
         "deploy-fb1": "cd ./dist && firebase deploy --project dev --only firestore,database,storage,hosting:fbsite1,functions:fbapp1",
         "deploy-fb2": "cd ./dist && firebase deploy --project dev --only firestore,database,storage,hosting:fbsite2,functions:fbapp2",
         "deploy-prod": "cd ./dist && firebase deploy --project prod",
         "deploy-prod-fb1": "cd ./dist && firebase deploy --project prod --only firestore,database,storage,hosting:fbsite1,functions:fbapp1",
         "deploy-prod-fb2": "cd ./dist && firebase deploy --project prod --only firestore,database,storage,hosting:fbsite2,functions:fbapp2",
-        "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn remove flairjs-fabric-defaults && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric && yarn add flairjs-fabric-defaults"
+        "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.55.88",
-        "nodemon": "^1.19.1"
+        "flairjs-cli": "^0.59.0",
+        "nodemon": "^1.19.2"
     },
     "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
         "firebase": "^6.5.0",
-        "firebase-admin": "^8.3.0",
+        "firebase-admin": "^8.5.0",
         "firebase-functions": "^3.2.0",
-        "flairjs": "^0.55.73",
-        "flairjs-fabric": "^0.55.76",
-        "flairjs-fabric-defaults": "^0.55.79"
+        "flairjs": "^0.59.0",
+        "flairjs-fabric": "^0.59.2",
+        "requirejs": "^2.3.6",
+        "showdown": "^1.9.0",
+        "vue": "^2.6.10"
     }
 }

@@ -91,7 +91,8 @@
                 "flairjs",
                 "flairjs-fabric",
                 "requirejs",
-                "vue/dist"
+                "vue/dist",
+                "showdown/dist"
             ],
             "minify": [
                 "modules/requirejs/require.js"
@@ -125,7 +126,8 @@
                 "flairjs",
                 "flairjs-fabric",
                 "requirejs",
-                "vue/dist"
+                "vue/dist",
+                "showdown/dist"
             ],
             "minify": [
                 "modules/requirejs/require.js"

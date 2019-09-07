@@ -15,7 +15,6 @@
                 "database": {
                     "root": "database",
                     "dest": "/database",
-                    "plugins": ["copy_files"],
                     "copy": [
                         "database.rules.json"
                     ]
@@ -23,7 +22,6 @@
                 "firebase": {
                     "root": "firebase",
                     "dest": "/",
-                    "plugins": ["copy_files"],
                     "copy": [
                         "firebase.json",
                         ".firebaserc"
@@ -32,7 +30,6 @@
                 "firestore": {
                     "root": "firestore",
                     "dest": "/firestore",             
-                    "plugins": ["copy_files"],
                     "copy": [
                         "firestore.indexes.json",
                         "firestore.rules"
@@ -49,13 +46,13 @@
                         "fbapp1",
                         "fbapp2"
                     ],
-                    "plugins": ["copy_files", "node_modules", "write_flags"],
                     "copy": [
                         "private",
                         "appConfig.json",
                         "functions.json",
                         "~/node_modules/flairjs-fabric/flair.server.firebase/main.js >> ./main.js"
                     ],
+                    "modules": true,
                     "flags": {
                         "dev": {
                             "FLAIR_SYMBOLS": "DEV,DEBUG",
@@ -75,7 +72,6 @@
                         "app",
                         "features"
                     ],
-                    "plugins": ["copy_files", "web_modules", "minify_files", "write_flags"],
                     "copy": [
                         "assets",
                         "favicon.png",
@@ -110,7 +106,6 @@
                         "app",
                         "features"
                     ],
-                    "plugins": ["copy_files", "web_modules", "minify_files", "write_flags"],
                     "copy": [
                         "assets",
                         "favicon.png",
@@ -140,7 +135,6 @@
                 "storage": {
                     "root": "storage",
                     "dest": "/storage",            
-                    "plugins": ["copy_files"],
                     "copy": [
                         "storage.rules"
                     ]

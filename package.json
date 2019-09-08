@@ -3,7 +3,7 @@
     "title": "yourapp name",
     "description": "yourapp description",
     "copyright": "yourapp copyright",
-    "version": "0.59.4",
+    "version": "0.59.5",
     "author": "yourapp author <yourapp@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -43,7 +43,7 @@
         "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn remove flairjs-fabric && yarn add flairjs-cli --dev && yarn add flairjs && yarn add flairjs-fabric"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.60.4",
+        "flairjs-cli": "^0.60.5",
         "nodemon": "^1.19.2"
     },
     "dependencies": {
@@ -52,8 +52,8 @@
         "firebase": "^6.5.0",
         "firebase-admin": "^8.5.0",
         "firebase-functions": "^3.2.0",
-        "flairjs": "^0.59.0",
-        "flairjs-fabric": "^0.59.2",
+        "flairjs": "^0.59.38",
+        "flairjs-fabric": "^0.59.21",
         "requirejs": "^2.3.6",
         "showdown": "^1.9.0",
         "vue": "^2.6.10"

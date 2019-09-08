@@ -1793,9 +1793,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.247:
-  version "1.3.252"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.252.tgz#5b6261965b564a0f4df0f1c86246487897017f52"
-  integrity sha512-NWJ5TztDnjExFISZHFwpoJjMbLUifsNBnx7u2JI0gCw6SbKyQYYWWtBHasO/jPtHym69F4EZuTpRNGN11MT/jg==
+  version "1.3.253"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.253.tgz#bc3b2c94c2a109c08d37b04f526dc05fdabcbb5b"
+  integrity sha512-LAwFRWViiiCSxQ2Lj3mnyEP8atkpAoHSPUnkFoy4mNabbnPHxtfseWvPCGGhewjHQI+ky/V4LdlTyyI0d3YPXA==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -2306,10 +2306,10 @@ firebase@^6.5.0:
     "@firebase/storage" "0.3.10"
     "@firebase/util" "0.2.26"
 
-flairjs-cli@^0.60.4:
-  version "0.60.4"
-  resolved "https://registry.yarnpkg.com/flairjs-cli/-/flairjs-cli-0.60.4.tgz#b5353e759fc9e6e9886fbac87567bbc6b302ed0a"
-  integrity sha512-qnO77eNTH2DbFRDv2OtsBSMBEXSAaewpBmP2M1IRSNAiHRh71tFl7udrpAxhBh9qFYmbrRrWxQ1Fs0gPc+wUOQ==
+flairjs-cli@^0.60.5:
+  version "0.60.5"
+  resolved "https://registry.yarnpkg.com/flairjs-cli/-/flairjs-cli-0.60.5.tgz#8ccc32a8556cd38b6ec3f17a900fa6a9270571ab"
+  integrity sha512-AavotYMDSeHo6fYNCEE20txM86E7s7Drcrxv903qmY+GC0KkpbV8xjgY35TVlYuKf9pCPLO/9fN6d2uG82RxkA==
   dependencies:
     clean-css "^4.2.1"
     copy-dir "^1.2.0"
@@ -2327,18 +2327,18 @@ flairjs-cli@^0.60.4:
     stylelint "^10.1.0"
     uglify-es "^3.3.9"
 
-flairjs-fabric@^0.59.2:
-  version "0.59.2"
-  resolved "https://registry.yarnpkg.com/flairjs-fabric/-/flairjs-fabric-0.59.2.tgz#d20f0afd65d37f77271aa11814ebbf9ec0faa25e"
-  integrity sha512-8z+MmtSVNXOR3/QwCrdZ80wdObbgmdFBdP4tIDH3oHMXJ9tLtDZRWEcYsl9BHOcjCPRsy2hccAxkh/tzWaSq+Q==
+flairjs-fabric@^0.59.21:
+  version "0.59.21"
+  resolved "https://registry.yarnpkg.com/flairjs-fabric/-/flairjs-fabric-0.59.21.tgz#6ccb9560ac731ecd21f22fe0047e50109cc1d0b7"
+  integrity sha512-zaVnFKrz6xEkDf9+Bc+GenbTIBydBUpRGdWxSxNPauAM/WipgkjMfiaY/nko29aIbtl7A+l63Mtv1Ovxq/OWPg==
   dependencies:
     node-env-file "^0.1.8"
     node-fetch "^2.6.0"
 
-flairjs@^0.59.0:
-  version "0.59.0"
-  resolved "https://registry.yarnpkg.com/flairjs/-/flairjs-0.59.0.tgz#1826750d68599fea8d1b68d102d47882c235103f"
-  integrity sha512-CzckKxdq0C1zZCEx5B/M3XImYRMIeyTA7h+WZ0FYEw3C5fZNa/hivYFyejPSRvxdE1ubo90QXje1o/tvUDtTNg==
+flairjs@^0.59.38:
+  version "0.59.38"
+  resolved "https://registry.yarnpkg.com/flairjs/-/flairjs-0.59.38.tgz#c0c86e9fc322701b105aef3d8c244cd31e340e27"
+  integrity sha512-cCboRfilsF1qjEo5s5zqLfGpxO/rd3NGEer0VPO10kgGml3sKvqhUAP5bQBw+RZ8ybEwKKSelZ4Y1afCQ7XgTw==
 
 flat-cache@^2.0.1:
   version "2.0.1"
@@ -3290,10 +3290,15 @@ is-regexp@^2.0.0:
   resolved "https://registry.yarnpkg.com/is-regexp/-/is-regexp-2.1.0.tgz#cd734a56864e23b956bf4e7c66c396a4c0b22c2d"
   integrity sha512-OZ4IlER3zmRIoB9AqNhEggVxqIH4ofDns5nRrPS6yQxXE1TPCUpFznBfRQmQa8uC+pXqjMnukiJBxCisIxiLGA==
 
-is-retry-allowed@^1.0.0, is-retry-allowed@^1.1.0:
+is-retry-allowed@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-1.1.0.tgz#11a060568b67339444033d0125a61a20d564fb34"
   integrity sha1-EaBgVotnM5REAz0BJaYaINVk+zQ=
+
+is-retry-allowed@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-1.2.0.tgz#d778488bd0a4666a3be8a1482b9f2baafedea8b4"
+  integrity sha512-RUbUeKwvm3XG2VYamhJL1xFktgjvPzL0Hq8C+6yrWIswDy3BIXGqCxhxkc30N9jqK311gVU137K8Ei55/zVJRg==
 
 is-stream-ended@^0.1.4:
   version "0.1.4"

@@ -5,16 +5,14 @@
                 "connections": {
                     "auto": "/fbapp1/api/",
                     "example1": {
-                        "R": {
-                            "local": "http://localhost:5001/*P*/*G*",
-                            "dev": "https://*G*-*P*.cloudfunctions.net",
+                        "host": {
+                            "local": "http://localhost:5001/:project/:geo",
+                            "dev": "https://:geo-:project.cloudfunctions.net",
                             "stage": "",
                             "prod": ""
                         },
-                        "V": "",
-                        "L": "",
-                        "P": "flairjs-firebase-app",
-                        "G": "us-east1"
+                        "project": "flairjs-firebase-app",
+                        "geo": "us-east1"
                     }
                 }
             }     

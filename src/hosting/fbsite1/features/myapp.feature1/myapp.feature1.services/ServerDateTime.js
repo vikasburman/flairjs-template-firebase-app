@@ -2,9 +2,8 @@
  * @name ServerDateTime
  * @description ServerDateTime
  */
-$$('ns', '(auto)');
 $$('static');
-Class('(auto)', function() {
+Class('', function() {
     $$('cache', 10000);
     $$('fetch', 'get', 'json', '/now');
     this.now = async (api) => {

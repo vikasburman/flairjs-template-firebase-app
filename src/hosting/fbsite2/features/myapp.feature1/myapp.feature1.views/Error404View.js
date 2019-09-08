@@ -1,13 +1,11 @@
 const { VueView } = await ns('flair.ui');
 const CommonLayout = await include('myapp.shared.views.CommonLayout');
 
-
 /**
  * @name Error404View
  * @description Default Error View
  */
-$$('ns', '(auto)');
-Class('(auto)', VueView, function() {
+Class('', VueView, function() {
     this.title = "Not Found";
     this.layout = new CommonLayout();
     this.i18n = {

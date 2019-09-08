@@ -5,8 +5,7 @@ const FirebaseApp = await include('flair.app.FirebaseApp');
  * @name App
  * @description App
  */
-$$('ns', '(auto)');
-Class('(auto)', App, [FirebaseApp], function() {
+Class('', App, [FirebaseApp], function() {
     $$('override');
     this.onStart = async (base) => {
         base();

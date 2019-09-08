@@ -6,8 +6,7 @@ const ServerDateTime  = await include('myapp.feature1.services.ServerDateTime');
  * @name HomeView
  * @description Default Home View
  */
-$$('ns', '(auto)');
-Class('(auto)', VueView, function() {
+Class('', VueView, function() {
     this.title = "Home";
     this.layout = new CommonLayout();
     this.i18n = {

@@ -55,7 +55,7 @@
         "flairjs": "^0.59.38",
         "flairjs-fabric": "^0.59.21",
         "requirejs": "^2.3.6",
-        "showdown": "^1.9.0",
+        "showdown": "^1.9.1",
         "vue": "^2.6.10"
     }
 }
